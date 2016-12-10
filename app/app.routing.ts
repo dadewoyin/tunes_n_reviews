@@ -5,6 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 // Pages for routing
 import { SearchComponent } from './components/search/search.component';
 import { AboutComponent } from './components/about/about.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 const appRoutes: Routes = [
 	{
@@ -14,6 +15,10 @@ const appRoutes: Routes = [
 	{
 		path: 'about',
 		component: AboutComponent
+	},
+	{
+		path: 'contact',
+		component: ContactComponent
 	}
 
 ];

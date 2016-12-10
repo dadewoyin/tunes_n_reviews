@@ -1,1 +1,6 @@
-SEARCH
+<h1 class="text-center"> Tunes 'N' Reviews</h1>
+<p class="text-center"> Find an album. Read a review. </p>
+
+<form class="form-group">
+	<input type="text" class="form-control text-center center-block" id="artistName" placeholder="Search Artists..." [(ngModel)]="artistName" name="artistName" (keyup)="searchMusic()">
+</form>
