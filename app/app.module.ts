@@ -12,18 +12,21 @@ import { AboutComponent } from './components/about/about.component';
 import { SearchComponent } from './components/search/search.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ArtistComponent } from './components/artist/artist.component';
+import { AlbumComponent } from './components/album/album.component';
 
 @NgModule({
   imports:      [ BrowserModule, 
-  				  routing, 
-  				  FormsModule, 
-  				  HttpModule ],
+        				  routing, 
+        				  FormsModule, 
+        				  HttpModule ],
   declarations: [ AppComponent, 
-  				  NavbarComponent, 
-  				  AboutComponent, 
-  				  SearchComponent,
-  				  ContactComponent,
-  				  ArtistComponent ],
+        				  NavbarComponent, 
+        				  AboutComponent, 
+        				  SearchComponent,
+        				  ContactComponent,
+        				  ArtistComponent,
+                  AlbumComponent
+             ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

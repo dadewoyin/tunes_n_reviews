@@ -45,3 +45,11 @@ body {
 	margin-bottom: 20px;
 	border-bottom: solid 1px #333;
 }
+
+/* Album Section */
+.album-thumb{
+    width:100%;
+}
+.tracklist {
+	background-color: #333;
+}
