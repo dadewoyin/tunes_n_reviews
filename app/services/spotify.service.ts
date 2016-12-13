@@ -5,6 +5,8 @@ import 'rxjs/add/operator/map'; // for observables
 @Injectable()
 export class SpotifyService {
 	private searchUrl:string;
+	private artistUrl:string;
+	private albumsUrl:string;
 	private artistName:string;
 
 	constructor(private _http: Http) { 
@@ -17,13 +19,16 @@ export class SpotifyService {
 			.map(res => res.json());
 	}
 
-/*	getArtistAlbums() {
-		return this._http.get('https://api.spotify.com/v1/artists/' + this.artistName + '/albums' + '?client_id=' + this.clientId + '&client_secret=' + this.client_secret)
-		.map(res => res.json());
+	getArtist(id:string) {
+		this.artistUrl = 'https://api.spotify.com/v1/artists/' + id;
+		return this._http.get(this.artistUrl)
+			.map(res => res.json());
 	}
 
-	updateArtistAlbums(artistName:string) {
-		this.artistName = artistName;
-	} */
+	getAlbums(artistId:string) {
+		this.albumsUrl = 'https://api.spotify.com/v1/artists/' + artistId + '/albums?market=US&album_type=album&limit=50';
+		return this._http.get(this.albumsUrl)
+			.map(res => res.json());
+	}
 	
 }

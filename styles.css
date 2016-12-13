@@ -1,6 +1,7 @@
 body {
 	color: white;
 }
+
 .navbar .navbar-nav {
   display: inline-block;
   float: none;
@@ -12,8 +13,35 @@ body {
 }
 
 /* Search */
-
 #artistName {
 	margin-top: 15px;
 	width: 60%;
+}
+
+/* Artist Page */
+
+.artist-thumb {
+	width: 80px;
+	height: auto;
+	float: left;
+	margin-right: 10px;
+}
+.artist-name {
+	margin-top: 5px;
+}
+.artist-albums .well {
+	margin-bottom: 20px;
+	overflow: auto;
+	min-height: 400px;
+}
+.album {
+	text-align: center;
+	background: #333;
+	padding: 10px 20px;
+	border: #666 1px solid;
+}
+.artist-header {
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: solid 1px #333;
 }

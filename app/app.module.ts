@@ -11,14 +11,19 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { AboutComponent } from './components/about/about.component';
 import { SearchComponent } from './components/search/search.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { ArtistComponent } from './components/artist/artist.component';
 
 @NgModule({
-  imports:      [ BrowserModule, routing, FormsModule, HttpModule ],
+  imports:      [ BrowserModule, 
+  				  routing, 
+  				  FormsModule, 
+  				  HttpModule ],
   declarations: [ AppComponent, 
   				  NavbarComponent, 
   				  AboutComponent, 
   				  SearchComponent,
-  				  ContactComponent ],
+  				  ContactComponent,
+  				  ArtistComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
