@@ -16,7 +16,7 @@ export class ArtistComponent  {
 
 	constructor(
 		private _spotifyService: SpotifyService, 
-		private _route:ActivatedRoute) {
+		private _route: ActivatedRoute) {
 	}
 
 	ngOnInit() {

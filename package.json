@@ -14,7 +14,7 @@
     "tsc:w": "tsc -w"
   },
   "keywords": [],
-  "author": "",
+  "author": "David Adewoyin",
   "license": "MIT",
   "dependencies": {
     "@angular/common": "~2.2.0",
